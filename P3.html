@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html > 
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+<script type="text/javascript"> 
+	//class declaration
+	class Student {
+		//constructor
+		constructor(student_id, student_name, student_course){
+			this.student_id = student_id;
+			this.student_name = student_name;
+			this.student_course = student_course;
+		}
+		//method for printing the message
+		Message(){
+			console.log("Student " + this.student_name + " (" + this.student_id + ") is enrolled for " + this.student_course + ".");
+		}
+	}
+	//instance 1
+	var student1 = new Student(1234, "Joe Soap", "Certificate in Networking");
+	student1.Message(); //prints message
+	//instance 2
+	var student2 = new Student(999, "Jane Doe", "Engineering N3");
+	student2.Message(); //prints message
+
+</script>
+</head>
+<body>	
+</body>	
+</html>	
